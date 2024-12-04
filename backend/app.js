@@ -9,12 +9,17 @@ import upload from './middlewares/upload-middleware.js'
 const app = express()
 const port = process.env.PORT
 const DATABASE_URL = process.env.DATABASE_URL
+const DB_OPTIONS = {
+  dbName: process.env.DB_NAME,
+  user: process.env.DB_USERNAME,
+  pass: process.env.DB_PASSWORD,
+}
 
 // CORS Policy
 app.use(cors())
 
 // Connect Database
-connectDB(DATABASE_URL)
+connectDB(DATABASE_URL, DB_OPTIONS)
 
 // Static Files
 app.use(express.static('public/uploads/pimage'))
