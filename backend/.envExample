@@ -1,7 +1,8 @@
 HOST = 127.0.0.1
 PORT = 8000
 DATABASE_URL = "mongodb://127.0.0.1:27017"
-DBNAME = "mernproject"
-DBUSERNAME = "satyam-seth"
-DBPASSWORD = "Hello@123456#"
-DBAUTHSOURCE = "mernproject"
+DB_NAME = "mernproject"
+DB_USERNAME = "satyam-seth"
+DB_PASSWORD = "Hello123456#"
+DB_AUTH_SOURCE = "mernproject"
+

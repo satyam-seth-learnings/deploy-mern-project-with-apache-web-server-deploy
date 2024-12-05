@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const candidateProfileApi = createApi({
   reducerPath: 'candidateProfileApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://127.0.0.1:8000/api' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://backend.mern-project.com/api' }),
   endpoints: (builder) => ({
     saveProfile: builder.mutation({
       query: (candidate) => {

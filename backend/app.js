@@ -13,6 +13,7 @@ const DB_OPTIONS = {
   dbName: process.env.DB_NAME,
   user: process.env.DB_USERNAME,
   pass: process.env.DB_PASSWORD,
+  authSource: process.env.DB_AUTH_SOURCE,
 }
 
 // CORS Policy

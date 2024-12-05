@@ -180,7 +180,7 @@ function App() {
                       <TableCell align="center">{candidate.state}</TableCell>
                       <TableCell align="center">{candidate.gender}</TableCell>
                       <TableCell align="center">{candidate.location}</TableCell>
-                      <TableCell align="center"><Avatar src={`http://127.0.0.1:8000/${candidate.pimage}`} /></TableCell>
+                      <TableCell align="center"><Avatar src={`http://backend.mern-project.com/${candidate.pimage}`} /></TableCell>
                     </TableRow>
                   );
                 })
